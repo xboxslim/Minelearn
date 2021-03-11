@@ -32,6 +32,11 @@ tecla.esquerda.solta
 tecla.acima
 tecla.acima.pressionada
 tecla.acima.solta
+tecla.abaixo
+tecla.abaixo.pressionada
+tecla.abaixo.solta
+
+
 
 /-----------------------------/
 
@@ -43,6 +48,10 @@ tecla.direita.pressionada=1;
 tecla.direita.solta=0;
 tecla.acima.pressionada=0;
 tecla.acima.solta=0;
+tecla.abaixo.pressionada=0;
+tecla.abaixo.solta=0;
+
+
 
 personagem.anda.x=1;
 personagem.anda.y=1;
@@ -71,6 +80,8 @@ tecla.direita.pressionada=0;
 tecla.direita.solta=1;
 tecla.acima.pressionada=0;
 tecla.acima.solta=0;
+tecla.abaixo.pressionada=0;
+tecla.abaixo.solta=0;
 
 personagem.anda.x=10;
 personagem.anda.y=1;
@@ -99,6 +110,8 @@ tecla.direita.pressionada=0;
 tecla.direita.solta=1;
 tecla.acima.pressionada=0;
 tecla.acima.solta=0;
+tecla.abaixo.pressionada=0;
+tecla.abaixo.solta=0;
 
 personagem.anda.x=9;
 personagem.anda.y=1;
@@ -127,6 +140,8 @@ tecla.direita.pressionada=0;
 tecla.direita.solta=1;
 tecla.acima.pressionada=0;
 tecla.acima.solta=0;
+tecla.abaixo.pressionada=0;
+tecla.abaixo.solta=0;
 
 personagem.anda.x=0;
 personagem.anda.y=1;
@@ -153,20 +168,91 @@ tecla.esquerda.pressionada=0;
 tecla.esquerda.solta=1;
 tecla.direita.pressionada=0;
 tecla.direita.solta=1;
-tecla.acima.pressionada=0;
+tecla.acima.pressionada=1;
 tecla.acima.solta=0;
+tecla.abaixo.pressionada=0;
+tecla.abaixo.solta=0;
 
+personagem.anda.x=0;
+personagem.anda.y=2;
+personagem.anda.x=0;
+personagem.anda.y=3;
+personagem.anda.x=0;
+personagem.anda.y=4;
+personagem.anda.x=0;
+personagem.anda.y=5;
+personagem.anda.x=0;
+personagem.anda.y=6;
+personagem.anda.x=0;
+personagem.anda.y=7;
+personagem.anda.x=0;
+personagem.anda.y=8;
+personagem.anda.x=0;
+personagem.anda.y=9;
+personagem.anda.x=0;
+personagem.anda.y=10;
+personagem.anda.x=0;
+personagem.anda.y=11;
 
+tecla.esquerda.pressionada=0;
+tecla.esquerda.solta=1;
+tecla.direita.pressionada=0;
+tecla.direita.solta=1;
+tecla.acima.pressionada=0;
+tecla.acima.solta=1;
+tecla.abaixo.pressionada=0;
+tecla.abaixo.solta=0;
 
+personagem.anda.x=0;
+personagem.anda.y=11;
+personagem.anda.x=0;
+personagem.anda.y=11;
+personagem.anda.x=0;
+personagem.anda.y=11;
+personagem.anda.x=0;
+personagem.anda.y=11;
+personagem.anda.x=0;
+personagem.anda.y=11;
+personagem.anda.x=0;
+personagem.anda.y=11;
+personagem.anda.x=0;
+personagem.anda.y=11;
+personagem.anda.x=0;
+personagem.anda.y=11;
+personagem.anda.x=0;
+personagem.anda.y=11;
+personagem.anda.x=0;
+personagem.anda.y=11;
 
+tecla.esquerda.pressionada=0;
+tecla.esquerda.solta=1;
+tecla.direita.pressionada=0;
+tecla.direita.solta=1;
+tecla.acima.pressionada=0;
+tecla.acima.solta=1;
+tecla.abaixo.pressionada=1;
+tecla.abaixo.solta=0;
 
-
-
-
-
-
-
-
+personagem.anda.x=0;
+personagem.anda.y=10;
+personagem.anda.x=0;
+personagem.anda.y=9;
+personagem.anda.x=0;
+personagem.anda.y=8;
+personagem.anda.x=0;
+personagem.anda.y=7;
+personagem.anda.x=0;
+personagem.anda.y=6;
+personagem.anda.x=0;
+personagem.anda.y=5;
+personagem.anda.x=0;
+personagem.anda.y=4;
+personagem.anda.x=0;
+personagem.anda.y=3;
+personagem.anda.x=0;
+personagem.anda.y=2;
+personagem.anda.x=0;
+personagem.anda.y=1;
 
 
 

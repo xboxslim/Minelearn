@@ -1,0 +1,33 @@
+//Minecraft Automation
+//criando Arvores
+//-----------------------------/
+//Variaveis
+
+arvore
+arvore.semente
+arvore.folha
+arvore.madeira
+arvore.nome
+
+//-----------------------------/
+
+//ação
+
+arvore.semente=1;
+arvore.folha=1;
+arvore.madeira=3;
+
+// tem que ser criado um banco de nomes
+
+arvore.nome=1;
+arvore.nome=2;
+arvore.nome=3;
+
+/*
+
+ Carvalho
+ Macieira
+ Pinheiro
+
+
+*/

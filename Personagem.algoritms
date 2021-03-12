@@ -15,44 +15,58 @@ personagem.anda.z
 personagem.corre
 personagem.pula
 personagem.vida
+
 personagem.level
-personagem.experiencia
+personagem.level.experiencia
+
 personagem.ataca
+personagem.ataca.dano
+
 personagem.corpo
+
 personagem.iventorio
+personagem.iventorio.item
+personagem.iventorio.espaco
+personagem.iventorio.qtd
 
 chao
 
 tecla
-tecla.direita
-tecla.direita.pressionada
-tecla.direita.solta
-tecla.esquerda
-tecla.esquerda.pressionada
-tecla.esquerda.solta
-tecla.acima
-tecla.acima.pressionada
-tecla.acima.solta
-tecla.abaixo
-tecla.abaixo.pressionada
-tecla.abaixo.solta
+tecla.D
+tecla.D.pressionada
+tecla.D.solta
+tecla.A
+tecla.A.pressionada
+tecla.A.solta
+tecla.W
+tecla.W.pressionada
+tecla.W.solta
+tecla.S
+tecla.S.pressionada
+tecla.S.solta
 tecla.espaco
 tecla.espaco.pressionada
 tecla.espaco.solta
+
+mouse
+mouse.botao
+mouse.botao.direito
+mouse.botao.direito.pressionada
+mouse.botao.direito.solta
 
 
 /-----------------------------/
 
 //ação
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=0;
-tecla.direita.pressionada=1;
-tecla.direita.solta=0;
-tecla.acima.pressionada=0;
-tecla.acima.solta=0;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=0;
+tecla.A.pressionada=0;
+tecla.A.solta=0;
+tecla.D.pressionada=1;
+tecla.D.solta=0;
+tecla.W.pressionada=0;
+tecla.W.solta=0;
+tecla.S.pressionada=0;
+tecla.S.solta=0;
 
 
 personagem.anda.x=1;
@@ -86,14 +100,14 @@ personagem.anda.x=10;
 personagem.anda.y=1;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=0;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=0;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=0;
+tecla.A.pressionada=0;
+tecla.A.solta=0;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=0;
+tecla.S.pressionada=0;
+tecla.S.solta=0;
 
 personagem.anda.x=10;
 personagem.anda.y=1;
@@ -126,14 +140,14 @@ personagem.anda.x=10;
 personagem.anda.y=1;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=1;
-tecla.esquerda.solta=0;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=0;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=0;
+tecla.A.pressionada=1;
+tecla.A.solta=0;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=0;
+tecla.S.pressionada=0;
+tecla.S.solta=0;
 
 personagem.anda.x=9;
 personagem.anda.y=1;
@@ -166,14 +180,14 @@ personagem.anda.x=0;
 personagem.anda.y=1;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=0;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=0;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=0;
+tecla.S.pressionada=0;
+tecla.S.solta=0;
 
 personagem.anda.x=0;
 personagem.anda.y=1;
@@ -206,14 +220,14 @@ personagem.anda.x=0;
 personagem.anda.y=1;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=1;
-tecla.acima.solta=0;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=0;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=1;
+tecla.W.solta=0;
+tecla.S.pressionada=0;
+tecla.S.solta=0;
 
 personagem.anda.x=0;
 personagem.anda.y=2;
@@ -246,14 +260,14 @@ personagem.anda.x=0;
 personagem.anda.y=11;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=1;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=0;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=1;
+tecla.S.pressionada=0;
+tecla.S.solta=0;
 
 personagem.anda.x=0;
 personagem.anda.y=11;
@@ -286,14 +300,14 @@ personagem.anda.x=0;
 personagem.anda.y=11;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=1;
-tecla.abaixo.pressionada=1;
-tecla.abaixo.solta=0;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=1;
+tecla.S.pressionada=1;
+tecla.S.solta=0;
 
 personagem.anda.x=0;
 personagem.anda.y=10;
@@ -326,14 +340,14 @@ personagem.anda.x=0;
 personagem.anda.y=1;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=1;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=1;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=1;
+tecla.S.pressionada=0;
+tecla.S.solta=1;
 
 personagem.anda.x=0;
 personagem.anda.y=1;
@@ -370,14 +384,14 @@ personagem.anda.z=0;
 
 personagem.corre=1;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=1;
-tecla.direita.solta=0;
-tecla.acima.pressionada=0;
-tecla.acima.solta=1;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=1;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=1;
+tecla.D.solta=0;
+tecla.W.pressionada=0;
+tecla.W.solta=1;
+tecla.S.pressionada=0;
+tecla.S.solta=1;
 
 personagem.anda.x=3;
 personagem.anda.y=1;
@@ -410,14 +424,14 @@ personagem.anda.x=30;
 personagem.anda.y=1;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=1;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=1;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=1;
+tecla.S.pressionada=0;
+tecla.S.solta=1;
 
 personagem.anda.x=30;
 personagem.anda.y=1;
@@ -450,14 +464,14 @@ personagem.anda.x=30;
 personagem.anda.y=1;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=1;
-tecla.esquerda.solta=0;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=1;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=1;
+tecla.A.pressionada=1;
+tecla.A.solta=0;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=1;
+tecla.S.pressionada=0;
+tecla.S.solta=1;
 
 personagem.anda.x=27;
 personagem.anda.y=1;
@@ -490,14 +504,14 @@ personagem.anda.x=0;
 personagem.anda.y=1;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=1;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=1;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=1;
+tecla.S.pressionada=0;
+tecla.S.solta=1;
 
 personagem.anda.x=0;
 personagem.anda.y=1;
@@ -530,14 +544,14 @@ personagem.anda.x=0;
 personagem.anda.y=1;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=1;
-tecla.acima.solta=0;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=1;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=1;
+tecla.W.solta=0;
+tecla.S.pressionada=0;
+tecla.S.solta=1;
 
 personagem.anda.x=0;
 personagem.anda.y=4;
@@ -570,14 +584,14 @@ personagem.anda.x=0;
 personagem.anda.y=31;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=1;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=1;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=1;
+tecla.S.pressionada=0;
+tecla.S.solta=1;
 
 personagem.anda.x=0;
 personagem.anda.y=31;
@@ -610,14 +624,14 @@ personagem.anda.x=0;
 personagem.anda.y=31;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=1;
-tecla.abaixo.pressionada=1;
-tecla.abaixo.solta=0;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=1;
+tecla.S.pressionada=1;
+tecla.S.solta=0;
 
 personagem.anda.x=0;
 personagem.anda.y=28;
@@ -650,14 +664,14 @@ personagem.anda.x=0;
 personagem.anda.y=1;
 personagem.anda.z=0;
 
-tecla.esquerda.pressionada=0;
-tecla.esquerda.solta=1;
-tecla.direita.pressionada=0;
-tecla.direita.solta=1;
-tecla.acima.pressionada=0;
-tecla.acima.solta=1;
-tecla.abaixo.pressionada=0;
-tecla.abaixo.solta=1;
+tecla.A.pressionada=0;
+tecla.A.solta=1;
+tecla.D.pressionada=0;
+tecla.D.solta=1;
+tecla.W.pressionada=0;
+tecla.W.solta=1;
+tecla.S.pressionada=0;
+tecla.S.solta=1;
 
 personagem.anda.x=0;
 personagem.anda.y=1;
@@ -702,4 +716,137 @@ personagem.pula=0;
 
 tecla.espaco.pressionada=0;
 tecla.espaco.solta=1;
+
+// VIDA
+
+personagem.vida=100;
+
+//Sofrendo Danos
+
+personagem.vida=90;
+personagem.vida=80;
+personagem.vida=70;
+personagem.vida=60;
+personagem.vida=50;
+personagem.vida=40;
+personagem.vida=30;
+personagem.vida=20;
+personagem.vida=10;
+
+// MORTO
+personagem.vida=0;
+
+// NASCENDO OUTRA VEZ
+
+personagem.vida=100;
+
+// Nivel
+/*
+	Formula do lvl
+	novo lvl = antigo lvl + antigo lvl + (50% antigo lvl)
+	
+	lvl 1 = 1
+	lvl 2 = 3
+	lvl 3 = 8
+	lvl 4 = 20
+	lvl 5 = 50
+	...
+*/
+
+personagem.level=1;
+personagem.level.experiencia=0;
+personagem.level.experiencia=1;
+
+personagem.level=2;
+personagem.level.experiencia=0;
+personagem.level.experiencia=1;
+personagem.level.experiencia=2;
+personagem.level.experiencia=3;
+
+personagem.level=3;
+personagem.level.experiencia=0;
+personagem.level.experiencia=1;
+personagem.level.experiencia=5;
+personagem.level.experiencia=8;
+
+personagem.level=4;
+personagem.level.experiencia=0;
+personagem.level.experiencia=1;
+personagem.level.experiencia=15;
+personagem.level.experiencia=20;
+
+personagem.level=5;
+personagem.level.experiencia=0;
+personagem.level.experiencia=20;
+personagem.level.experiencia=30;
+personagem.level.experiencia=50;
+
+//...
+
+//ATACA
+
+mouse.botao.direito.pressionada=1;
+mouse.botao.direito.solta=0;
+personagem.ataca=1;
+personagem.ataca.dano=1;
+
+mouse.botao.direito.pressionada=0;
+mouse.botao.direito.solta=1;
+personagem.ataca=0;
+personagem.ataca.dano=1;
+
+//Armadura
+
+/*
+	Reduz o dano recebido do Monstro
+	
+*/
+personagem.corpo=30;
+
+//diminui a cada 5 danos recebido
+
+personagem.corpo=29;
+personagem.corpo=28;
+personagem.corpo=27;
+personagem.corpo=26;
+personagem.corpo=25;
+personagem.corpo=24;
+
+//...
+
+//IVENTORIO
+
+personagem.iventorio=30;
+personagem.iventorio.item=1;
+personagem.iventorio.qtd=1;
+personagem.iventorio.espaco=1;
+personagem.iventorio.item=2;
+personagem.iventorio.qtd=6;
+personagem.iventorio.espaco=2;
+personagem.iventorio.item=0; // 0 = Sem Item no espaco selecionado
+personagem.iventorio.qtd=0;
+personagem.iventorio.espaco=3;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,36 @@
+// Criação Mobs
+
+// Variaveis
+
+mobs
+mobs.humor
+mobs.vida
+mobs.ataque
+mobs.nome
+
+// Ação.
+
+mobs.humor=1; // 1 = passivo
+mobs.ataque=0;
+mobs.humor=2; // 2 = agressivo
+mobs.ataque=1;
+mobs.vida=100; // nascido
+mobs.vida=0; // morto 
+
+// criando lista de nomes
+
+mobs.nome=1;
+mobs.nome=2;
+
+/*
+ boi
+ vaca
+ carneiro
+ galinha
+ zombie
+ kreeper
+ esqueleto arqueiro
+ ...
+
+*/
+

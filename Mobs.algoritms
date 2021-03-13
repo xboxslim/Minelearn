@@ -6,20 +6,36 @@
 
 
 mobs
+mobs.id;
 mobs.humor
 mobs.vida
 mobs.ataque
 mobs.nome
+mobs.anda
+mobs.anda.x
+mobs.anda.y
+mobs.anda.z
 
 //-----------------------------//
 // Ação.
 
+mobs.id=1;
 mobs.humor=1; // 1 = passivo
 mobs.ataque=0;
 mobs.humor=2; // 2 = agressivo
 mobs.ataque=1;
 mobs.vida=100; // nascido
 mobs.vida=0; // morto 
+
+mobs.anda.x=1;
+mobs.anda.y=1;
+mobs.anda.z=0;
+mobs.anda.x=2;
+mobs.anda.y=1;
+mobs.anda.z=0;
+mobs.anda.x=3;
+mobs.anda.y=1;
+mobs.anda.z=0;
 
 // tem que ser criado um banco de nomes
 

@@ -6,6 +6,7 @@
 // Variaveis
 
 itens
+itens.id;
 itens.nome
 
 //-----------------------------/
@@ -13,6 +14,7 @@ itens.nome
 
 
 // tem que ser criado um banco de nomes
+itens.id=1;
 
 itens.nome=1;
 itens.nome=2;

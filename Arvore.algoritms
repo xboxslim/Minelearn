@@ -9,11 +9,13 @@ arvore.semente
 arvore.folha
 arvore.madeira
 arvore.nome
+arvore.id;
 
 //-----------------------------/
 
 //ação
 
+arvore.id=1;
 arvore.semente=1;
 arvore.folha=1;
 arvore.madeira=3;

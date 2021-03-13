@@ -6,6 +6,7 @@
 
 classe: personagem
 
+personagem.id;
 personagem.anda
 personagem.anda.x
 personagem.anda.y
@@ -67,6 +68,7 @@ tecla.W.solta=0;
 tecla.S.pressionada=0;
 tecla.S.solta=0;
 
+personagem.id=1;
 
 personagem.anda.x=1;
 personagem.anda.y=1;

@@ -7,11 +7,14 @@
 chao
 chao.EstadoFisico
 chao.nomes
+chao.id;
 
 
 //-----------------------------//
 
 //ação
+
+chao.id=1;
 
 chao.EstadoFisico=0; // 0 - sólido
 chao.EstadoFisico=1; // 1 - líquido

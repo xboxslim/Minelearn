@@ -1,6 +1,9 @@
+//Minecraft Automation
 // Criação Mobs
 
+//-----------------------------//
 // Variaveis
+
 
 mobs
 mobs.humor
@@ -8,6 +11,7 @@ mobs.vida
 mobs.ataque
 mobs.nome
 
+//-----------------------------//
 // Ação.
 
 mobs.humor=1; // 1 = passivo
@@ -17,7 +21,7 @@ mobs.ataque=1;
 mobs.vida=100; // nascido
 mobs.vida=0; // morto 
 
-// criando lista de nomes
+// tem que ser criado um banco de nomes
 
 mobs.nome=1;
 mobs.nome=2;

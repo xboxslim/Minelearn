@@ -1,7 +1,7 @@
 //Minecraft Automation
 //criando Personagem
 
-/-----------------------------/
+//-----------------------------//
 //Variaveis
 
 classe: personagem
@@ -54,7 +54,7 @@ mouse.botao.direito.pressionada
 mouse.botao.direito.solta
 
 
-/-----------------------------/
+//-----------------------------//
 
 //ação
 

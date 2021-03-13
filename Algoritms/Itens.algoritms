@@ -1,0 +1,28 @@
+//Minecraft Automation
+// Criando Itens
+
+//-----------------------------/
+
+// Variaveis
+
+itens
+itens.id;
+itens.nome
+
+//-----------------------------/
+// Ação
+
+
+// tem que ser criado um banco de nomes
+itens.id=1;
+
+itens.nome=1;
+itens.nome=2;
+
+/*
+pa
+machado
+enxada
+picareta
+
+*/

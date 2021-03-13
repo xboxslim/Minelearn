@@ -1,0 +1,44 @@
+//Minecraft Automation
+//criando chão
+
+//-----------------------------//
+//Variaveis
+
+chao
+chao.EstadoFisico
+chao.nomes
+chao.id;
+
+
+//-----------------------------//
+
+//ação
+
+chao.id=1;
+
+chao.EstadoFisico=0; // 0 - sólido
+chao.EstadoFisico=1; // 1 - líquido
+chao.EstadoFisico=2; // 2 - gasoso
+
+// tem que ser criado um banco de nomes
+
+chao.nomes=1;
+chao.nomes=2;
+chao.nomes=3;
+/*
+
+Ar
+Terra
+Água
+Gelo
+Areia_Amarela
+Cascalho
+Rocha
+RochaCCarvao
+RochaCFerro
+Marmore
+Granizo
+...
+
+*/
+

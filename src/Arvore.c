@@ -6,9 +6,12 @@
 //Variaveis
 
 char db_Arvores_Mundo[][20]=
-{"Carvalho",                                       "Macieira",
- "Pinheiro",
- "Cedro"                                          };
+{
+	"Carvalho",
+	"Macieira",
+	"Pinheiro",
+	"Cedro" 
+};
 
 int tam_db_Arvores_Mundo = ((sizeof db_Arvores_Mundo)/20);
 

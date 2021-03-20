@@ -6,10 +6,66 @@
 
 //Variaveis
 
-void AndaCorre()
+
+struct Personagem_Mundo Personagem_Inicializacao(int fID, int fx, int fy, int fz)
 {
-	struct Keyboard tcl;
 	struct Personagem_Mundo Pers1;
+	Pers1.personagemId = fID;
+	Pers1.personagemVida=100;
+	Pers1.personagemLevel=1;	
+	Pers1.personagemLevelExperiencia=0;
+	Pers1.personagemCorpo=0;
+	Pers1.personagemIventorio=30;
+	Pers1.personagemIventorioItem=0;
+	Pers1.personagemIventorioQtd=0;
+	Pers1.personagemAtaca=0;
+	Pers1.personagemAtacaDano=1;	
+	Pers1.personagemPula=0;
+	Pers1.personagemCorre=0;
+	Pers1.personagemAndaX = fx;
+	Pers1.personagemAndaY = fy;
+	Pers1.personagemAndaZ = fz;
+		
+	return Pers1;
+}
+
+void Personagem_Status(struct Personagem_Mundo Pers1)
+{
+	printf("Personagem ID = %d\n",Pers1.personagemId);
+	printf("Personagem Vida = %d\n",Pers1.personagemVida);
+	printf("Personagem Level = %d\n",Pers1.personagemLevel);
+	printf("Personagem Experiencia = %d\n",Pers1.personagemLevelExperiencia);
+	printf("Personagem Armadura = %d\n",Pers1.personagemCorpo);
+	printf("Personagem Iventorio = %d\n",Pers1.personagemIventorio);
+	printf("Personagem Ataca = %d\n",Pers1.personagemAtaca);
+	printf("Personagem Dano de Atq = %d\n",Pers1.personagemAtacaDano);	
+	printf("Personagem Pulo = %d\n",Pers1.personagemPula);
+	printf("Personagem Velocidade = %d\n",Pers1.personagemCorre);
+	printf("Personagem (x) = %d\n",Pers1.personagemAndaX);
+	printf("Personagem (y) = %d\n",Pers1.personagemAndaY);
+	printf("Personagem (z) = %d\n",Pers1.personagemAndaZ);		
+}
+
+struct Keyboard Kbd_Inicializacao(struct Keyboard Kbd)
+{	
+	Kbd.teclaDPressionada = 0;
+	Kbd.teclaDSolta = 0;
+	Kbd.teclaAPressionada = 0;
+	Kbd.teclaASolta = 0;
+	Kbd.teclaWPressionada = 0;
+	Kbd.teclaWSolta = 0;
+	Kbd.teclaSPressionada = 0;
+	Kbd.teclaSSolta = 0;
+	Kbd.teclaEspacoPressionada = 0;
+	Kbd.teclaEspacoSolta = 0;
+	Kbd.teclaShiftPressionada = 0;
+	Kbd.teclaShiftSolta = 0;
+}
+
+int AndaCorre(struct Keyboard tcl, struct Personagem_Mundo Pers1, int xyz_return)
+{	
+	
+	int retnX,retnY,retnZ;
 	if(tcl.teclaEspacoPressionada == 1)
 	{
 		tcl.teclaEspacoSolta=0;
@@ -100,6 +156,21 @@ void AndaCorre()
 			tcl.teclaDSolta=1;
 			Pers1.personagemAndaY--;
 		}
+	}
+	if(xyz_return == 1)
+	{
+		retnX = Pers1.personagemAndaX;
+		return retnX;
+	}
+	if(xyz_return == 2)
+	{
+		retnY = Pers1.personagemAndaY;
+		return retnY;
+	}
+	if(xyz_return == 3)
+	{	
+		retnZ = Pers1.personagemAndaZ;
+		return retnZ;
 	}	
 }
 
@@ -119,43 +190,4 @@ void Ataca()
 		Pers1.personagemAtaca=0;
 		Pers1.personagemAtacaDano=1;
 	}
-}
-
-struct Personagem_Mundo Personagem_Inicializacao(int fID, int fx, int fy, int fz)
-{
-	struct Personagem_Mundo Pers1;
-	Pers1.personagemId = fID;
-	Pers1.personagemVida=100;
-	Pers1.personagemLevel=1;	
-	Pers1.personagemLevelExperiencia=0;
-	Pers1.personagemCorpo=0;
-	Pers1.personagemIventorio=30;
-	Pers1.personagemIventorioItem=0;
-	Pers1.personagemIventorioQtd=0;
-	Pers1.personagemAtaca=0;
-	Pers1.personagemAtacaDano=1;	
-	Pers1.personagemPula=0;
-	Pers1.personagemCorre=0;
-	Pers1.personagemAndaX = fx;
-	Pers1.personagemAndaY = fy;
-	Pers1.personagemAndaZ = fz;
-		
-	return Pers1;
-}
-
-void Personagem_Status(struct Personagem_Mundo Pers1)
-{
-	printf("Personagem ID = %d\n",Pers1.personagemId);
-	printf("Personagem Vida = %d\n",Pers1.personagemVida);
-	printf("Personagem Level = %d\n",Pers1.personagemLevel);
-	printf("Personagem Experiencia = %d\n",Pers1.personagemLevelExperiencia);
-	printf("Personagem Armadura = %d\n",Pers1.personagemCorpo);
-	printf("Personagem Iventorio = %d\n",Pers1.personagemIventorio);
-	printf("Personagem Ataca = %d\n",Pers1.personagemAtaca);
-	printf("Personagem Dano de Atq = %d\n",Pers1.personagemAtacaDano);	
-	printf("Personagem Pulo = %d\n",Pers1.personagemPula);
-	printf("Personagem Velocidade = %d\n",Pers1.personagemCorre);
-	printf("Personagem (x) = %d\n",Pers1.personagemAndaX);
-	printf("Personagem (y) = %d\n",Pers1.personagemAndaY);
-	printf("Personagem (z) = %d\n",Pers1.personagemAndaZ);		
 }

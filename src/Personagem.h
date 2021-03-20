@@ -27,20 +27,14 @@ struct Personagem_Mundo
 
 struct Keyboard
 {
-	int tecla;
-	int teclaD;
 	int teclaDPressionada;
 	int teclaDSolta;
-	int teclaA;
 	int teclaAPressionada;
 	int teclaASolta;
-	int teclaW;
 	int teclaWPressionada;
 	int teclaWSolta;
-	int teclaS;
 	int teclaSPressionada;
 	int teclaSSolta;
-	int teclaEspaco;
 	int teclaEspacoPressionada;
 	int teclaEspacoSolta;
 	int teclaShiftPressionada;
@@ -49,13 +43,12 @@ struct Keyboard
 
 struct Mouse
 {
-	int mouse;
-	int mouseBotao;
 	int mouseBotaoDireito;
 	int mouseBotaoDireitoPressionada;
 	int mouseBotaoDireitoSolta;
 };
 
 struct Personagem_Mundo Personagem_Inicializacao(int fID, int fx, int fy, int fz);
+struct Keyboard Kbd_Inicializacao(struct Keyboard Kbd);
 void Personagem_Status(struct Personagem_Mundo Pers1);
-
+int AndaCorre(struct Keyboard tcl, struct Personagem_Mundo Pers1, int xyz_return);

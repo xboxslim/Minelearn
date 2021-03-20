@@ -52,11 +52,10 @@ Mmobs.mobsAndaX++;
 Mobs_Status(Mmobs);
 
 
+AndaCorre();
+
 /*
-mobs.id=1;
-mobs.anda.x=6;
-mobs.anda.y=1;
-mobs.anda.z=50;
+
 
 personagem.id=1;
 personagem.anda.x=2;

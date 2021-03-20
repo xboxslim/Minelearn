@@ -2,17 +2,14 @@
 //criando Regras do Jogo
 //------------------------------//
 
-#include <stdio.h>
-
-// includes
-Chao.algoritms
-Mobs.algoritms
-Personagem.algoritms
-Arvore.algoritms
+#include "Arvores.h"
+#include "Chao.h"
+#include "Mobs.h"
+#include "Personagem.h"
 
 //-----------------------------//
 //Variaveis
-mapa
+int mapa[100][100][100];
 
 //-----------------------------//
 
@@ -25,38 +22,13 @@ int main(){
 * mundo inicial terar o tamanho de 100 blocos de norte a sul, 100 blocos de leste a oeste, 100 blocos metade Ar e metade Terra
 */
 
-mapa[1][1][50]=chao.nomes=2;
-mapa[2][1][50]=chao.nomes=2;
-mapa[3][1][50]=chao.nomes=2;
-mapa[4][1][50]=chao.nomes=2;
-mapa[5][1][50]=chao.nomes=2;
-mapa[6][1][50]=chao.nomes=2;
-mapa[7][1][50]=chao.nomes=2;
-mapa[8][1][50]=chao.nomes=2;
-mapa[9][1][50]=chao.nomes=2;
-mapa[10][1][50]=chao.nomes=2;
-//...
-mapa[90][1][50]=chao.nomes=2;
-mapa[91][1][50]=chao.nomes=2;
-mapa[92][1][50]=chao.nomes=2;
-mapa[93][1][50]=chao.nomes=2;
-mapa[94][1][50]=chao.nomes=2;
-mapa[95][1][50]=chao.nomes=2;
-mapa[96][1][50]=chao.nomes=2;
-mapa[97][1][50]=chao.nomes=2;
-mapa[98][1][50]=chao.nomes=2;
-mapa[99][1][50]=chao.nomes=2;
-//...
-mapa[90][99][50]=chao.nomes=2;
-mapa[91][99][50]=chao.nomes=2;
-mapa[92][99][50]=chao.nomes=2;
-mapa[93][99][50]=chao.nomes=2;
-mapa[94][99][50]=chao.nomes=2;
-mapa[95][99][50]=chao.nomes=2;
-mapa[96][99][50]=chao.nomes=2;
-mapa[97][99][50]=chao.nomes=2;
-mapa[98][99][50]=chao.nomes=2;
-mapa[99][99][50]=chao.nomes=2;
+struct Chao_Mundo Mchao;
+Mchao = Chao_Inicializacao(1,0,2);
+
+for(int x = 0; x < 100; x++)
+	for(int y = 0; y < 100; y++)
+		mapa[x][y][50]=Mchao.chaoNomes;
+
 
 personagem.id=1;
 Personagem.localizacao=mapa[1][1][50];

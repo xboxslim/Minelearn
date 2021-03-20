@@ -61,3 +61,12 @@ void Mobs_Status(struct Mobs_Mundo Mobs1)
 		printf("Mobs Nome = %s\n",db_Mobs_Mundo[Mobs1.mobsNome-1]);
 	printf("tamanho do banco de dados Mobs = %d\n",tam_db_Mobs_Mundo);	
 }
+
+void PrintMobs(int Nome)
+{
+	if((Nome <= 0) || (Nome > tam_db_Mobs_Mundo))
+		printf("Numero Invalido\n");
+	else
+		printf("%s",db_Mobs_Mundo[Nome-1]);
+
+}

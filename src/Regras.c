@@ -2,7 +2,7 @@
 //criando Regras do Jogo
 //------------------------------//
 
-#include "Arvores.h"
+#include "Arvore.h"
 #include "Chao.h"
 #include "Mobs.h"
 #include "Personagem.h"
@@ -23,38 +23,36 @@ int main(){
 */
 
 struct Chao_Mundo Mchao;
+struct Personagem_Mundo Mpers;
+struct Mobs_Mundo Mmobs;
+struct Arvores_Mundo Marvo,Marvo1;
 Mchao = Chao_Inicializacao(1,0,2);
+Mpers = Personagem_Inicializacao(1,1,1,50);
+Mmobs = Mobs_Inicializacao(1,1,1,5,1,50);
+Marvo = Arvore_Inicializacao(1,1,3,1,50);
+Marvo1 = Arvore_Inicializacao(2,1,12,1,50);
 
-for(int x = 0; x < 100; x++)
-	for(int y = 0; y < 100; y++)
+for(int y = 0; y < 100; y++)
+	for(int x = 0; x < 100; x++)
 		mapa[x][y][50]=Mchao.chaoNomes;
 
 
-personagem.id=1;
-Personagem.localizacao=mapa[1][1][50];
-
-mobs.id=1;
-mobs.nome=1;
-mobs.humor=1; // 1 = passivo
-mobs.ataque=0;
-mobs.localizacao=mapa[5][1][50];
-
-arvore.id=1;
-arvore.semente=1;
-arvore.folha=1;
-arvore.madeira=3;
-arvore.nome=1;
-arvore.localizacao=mapa[3][1][50];
-
-arvore.id=2;
-arvore.semente=1;
-arvore.folha=1;
-arvore.madeira=3;
-arvore.nome=1;
-arvore.localizacao=mapa[12][1][50];
-
 // movimentação
+PrintMobs(1);
+printf(" esta andando para o leste\n");
+Mmobs.mobsAndaX++;
+Mobs_Status(Mmobs);
+PrintMobs(1);
+printf(" esta andando para o leste\n");
+Mmobs.mobsAndaX++;
+Mobs_Status(Mmobs);
+PrintMobs(1);
+printf(" esta andando para o leste\n");
+Mmobs.mobsAndaX++;
+Mobs_Status(Mmobs);
 
+
+/*
 mobs.id=1;
 mobs.anda.x=6;
 mobs.anda.y=1;
@@ -67,5 +65,6 @@ personagem.anda.z=50;
 personagem.anda.x=3;
 personagem.anda.y=1;
 personagem.anda.z=50;
+*/
 	return 0;
 }

@@ -18,3 +18,4 @@ struct Mobs_Mundo
 
 struct Mobs_Mundo Mobs_Inicializacao(int fID, int Nome, int fHumor, int fx, int fy, int fz);
 void Mobs_Status(struct Mobs_Mundo Mobs1);
+void PrintMobs(int Nome);

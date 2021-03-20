@@ -1,80 +1,63 @@
 //Minecraft Automation
 // Criação Mobs
 
-#include <stdio.h>
+#include "Mobs.h"
 //-----------------------------//
 // Variaveis
 
-int mobs;
-int mobsId;
-int mobsHumor;
-int mobsVida;
-int mobsAtaque;
-int mobsNome;
-int mobsAnda;
-int mobsAndaX;
-int mobsAndaY;
-int mobsAndaZ;
+char db_Mobs_Mundo[][20]=
+{
+	"boi",
+ 	"vaca",
+ 	"carneiro",
+ 	"galinha",
+ 	"zombie",
+ 	"kreeper",
+ 	"esqueleto arqueiro"
+};
 
-//-----------------------------//
-int main(){
-// Ação.
+int tam_db_Mobs_Mundo = ((sizeof db_Mobs_Mundo)/20);
 
-mobsId=1;
-mobsHumor=1; // 1 = passivo
-mobsAtaque=0;
-mobsHumor=2; // 2 = agressivo
-mobsAtaque=1;
-mobsVida=100; // nascido
-mobsVida=0; // morto 
-
-mobsAndaX=1;
-mobsAndaY=1;
-mobsAndaZ=0;
-mobsAndaX=2;
-mobsAndaY=1;
-mobsAndaZ=0;
-mobsAndaX=3;
-mobsAndaY=1;
-mobsAndaZ=0;
-
-// tem que ser criado um banco de nomes
-
-mobsNome=1;
-mobsNome=2;
-
-/*
- boi
- vaca
- carneiro
- galinha
- zombie
- kreeper
- esqueleto arqueiro
- ...
-
-*/
-
-	printf("Mobs ID = %d\n",mobsId);
-	
-	if(mobsHumor == 1){
-		printf("Mobs humor = Passivo\n");
-	}
-	if(mobsHumor == 2){
-		printf("Mobs humor = Agressivo\n");
-	}
-	
-	printf("Mobs Ataque = %d\n",mobsAtaque);
-	printf("Mobs Vida = %d\n",mobsVida);
-	
-	printf("Mobs Anda X = %d\n",mobsAndaX);
-	printf("Mobs Anda Y = %d\n",mobsAndaY);
-	printf("Mobs Anda Z = %d\n",mobsAndaZ);
-	
-
-	return 0;
+struct Mobs_Mundo Mobs_Inicializacao(int fID, int Nome, int fHumor, int fx, int fy, int fz)
+{
+	struct Mobs_Mundo Mobs1;
+	Mobs1.mobsId = fID;
+	if((fHumor <= 0) || (fHumor > 2))
+		printf("Numero Invalido\n");
+	else
+		Mobs1.mobsHumor = fHumor;
+	if(fHumor == 1)
+		Mobs1.mobsAtaque = 0;
+	if(fHumor == 2)
+		Mobs1.mobsAtaque = 1;
+	Mobs1.mobsVida=100;
+	Mobs1.mobsAndaX = fx;
+	Mobs1.mobsAndaY = fy;
+	Mobs1.mobsAndaZ = fz;		
+	if((Nome <= 0) || (Nome > tam_db_Mobs_Mundo))
+		printf("Numero Invalido\n");
+	else
+		Mobs1.mobsNome = Nome;
+		
+	return Mobs1;
 }
 
-
-
-
+void Mobs_Status(struct Mobs_Mundo Mobs1)
+{
+	printf("Mobs ID = %d\n",Mobs1.mobsId);
+	if(Mobs1.mobsHumor == 1)
+		printf("Mobs Humor = Passivo\n");
+	if(Mobs1.mobsHumor == 2)
+		printf("Mobs Humor = Agressivo\n");
+	printf("Mobs Ataque = %d\n",Mobs1.mobsAtaque);
+	printf("Mobs Vida = %d\n",Mobs1.mobsVida);
+	printf("Mobs (x) = %d\n",Mobs1.mobsAndaX);
+	printf("Mobs (y) = %d\n",Mobs1.mobsAndaY);
+	printf("Mobs (z) = %d\n",Mobs1.mobsAndaZ);
+	
+	if((Mobs1.mobsNome <= 0) || (Mobs1.mobsNome > tam_db_Mobs_Mundo))
+		printf("Numero Invalido\n");
+	else
+		printf("Mobs Nome = %s\n",db_Mobs_Mundo[Mobs1.mobsNome-1]);
+	printf("tamanho do banco de dados Mobs = %d\n",tam_db_Mobs_Mundo);	
+}

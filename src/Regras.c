@@ -26,11 +26,20 @@ struct Chao_Mundo Mchao;
 struct Personagem_Mundo Mpers;
 struct Mobs_Mundo Mmobs;
 struct Arvores_Mundo Marvo,Marvo1;
+struct Keyboard MKbd;
+
+char getKbd;
+int Mretn;
+
+
 Mchao = Chao_Inicializacao(1,0,2);
 Mpers = Personagem_Inicializacao(1,1,1,50);
 Mmobs = Mobs_Inicializacao(1,1,1,5,1,50);
 Marvo = Arvore_Inicializacao(1,1,3,1,50);
 Marvo1 = Arvore_Inicializacao(2,1,12,1,50);
+Kbd_Inicializacao(MKbd);
+
+
 
 for(int y = 0; y < 100; y++)
 	for(int x = 0; x < 100; x++)
@@ -52,7 +61,30 @@ Mmobs.mobsAndaX++;
 Mobs_Status(Mmobs);
 
 
-AndaCorre();
+getKbd = getchar();
+if((getKbd == 'W') || (getKbd == 'w'))
+{
+	MKbd.teclaWPressionada = 1;
+	Mretn = 2;
+}
+if((getKbd == 'S') || (getKbd == 's'))
+{
+	MKbd.teclaSPressionada = 1;
+	Mretn = 2;
+}
+if((getKbd == 'A') || (getKbd == 'a'))
+{
+	MKbd.teclaAPressionada = 1;
+	Mretn = 1;
+}
+if((getKbd == 'D') || (getKbd == 'd'))
+{
+	MKbd.teclaDPressionada = 1;
+	Mretn = 1;
+}
+
+AndaCorre(MKbd, Mpers, Mretn);
+Kbd_Inicializacao(MKbd);
 
 /*
 

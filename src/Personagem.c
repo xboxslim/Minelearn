@@ -60,11 +60,12 @@ struct Keyboard Kbd_Inicializacao(struct Keyboard Kbd)
 	Kbd.teclaEspacoSolta = 0;
 	Kbd.teclaShiftPressionada = 0;
 	Kbd.teclaShiftSolta = 0;
+	
+	return Kbd;
 }
 
 struct Personagem_Mundo AndaCorre(struct Keyboard tcl, struct Personagem_Mundo Pers1)
-{	
-	
+{		
 	if(tcl.teclaEspacoPressionada == 1)
 	{
 		tcl.teclaEspacoSolta=0;
@@ -74,9 +75,14 @@ struct Personagem_Mundo AndaCorre(struct Keyboard tcl, struct Personagem_Mundo P
 	if(tcl.teclaEspacoPressionada == 0)
 	{
 		tcl.teclaEspacoSolta=1;
-		Pers1.personagemPula=0;
-		Pers1.personagemAndaZ--;
+		
+		if(Pers1.personagemPula == 1)
+		{
+			Pers1.personagemAndaZ--;
+			Pers1.personagemPula=0;
+		}
 	}
+	
 	
 	
 	if(tcl.teclaShiftPressionada == 1)

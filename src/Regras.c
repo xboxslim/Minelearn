@@ -13,7 +13,8 @@ int mapa[100][100][100];
 
 //-----------------------------//
 
-int main(){
+int main()
+{
 //ação
 /*
 * Personagem nasce aleatoriamente no mundo
@@ -29,7 +30,7 @@ struct Arvores_Mundo Marvo,Marvo1;
 struct Keyboard MKbd;
 
 char getKbd;
-int Mretn;
+int opcKbd = 0;
 
 
 Mchao = Chao_Inicializacao(1,0,2);
@@ -37,7 +38,7 @@ Mpers = Personagem_Inicializacao(1,1,1,50);
 Mmobs = Mobs_Inicializacao(1,1,1,5,1,50);
 Marvo = Arvore_Inicializacao(1,1,3,1,50);
 Marvo1 = Arvore_Inicializacao(2,1,12,1,50);
-Kbd_Inicializacao(MKbd);
+MKbd = Kbd_Inicializacao(MKbd);
 
 
 
@@ -60,45 +61,63 @@ printf(" esta andando para o leste\n");
 Mmobs.mobsAndaX++;
 Mobs_Status(Mmobs);
 
-while(getKbd != '1')
+while(opcKbd != 9999)
 {
 getKbd = getchar();
+
 if((getKbd == 'W') || (getKbd == 'w'))
 {
 	MKbd.teclaWPressionada = 1;
-	Mretn = 2;
+	opcKbd = 2;
 }
 if((getKbd == 'S') || (getKbd == 's'))
 {
 	MKbd.teclaSPressionada = 1;
-	Mretn = 2;
+	opcKbd = 2;
 }
 if((getKbd == 'A') || (getKbd == 'a'))
 {
 	MKbd.teclaAPressionada = 1;
-	Mretn = 1;
+	opcKbd = 1;
 }
 if((getKbd == 'D') || (getKbd == 'd'))
 {
 	MKbd.teclaDPressionada = 1;
-	Mretn = 1;
+	opcKbd = 1;
 }
 
-Mpers = AndaCorre(MKbd, Mpers);
-Personagem_Status(Mpers);
-Kbd_Inicializacao(MKbd);
+if(getKbd != 10)
+{
+	if(Mpers.personagemAndaX == 0)
+	{
+		printf("FIM DO MAPA, retorne pra direita, Norte, Sul\n");
+		Mpers.personagemAndaX++;
+	} 
+	if(Mpers.personagemAndaX == 99)
+	{
+		printf("FIM DO MAPA, retorne pra esquerda, Norte, Sul\n");
+		Mpers.personagemAndaX--;
+	}
+	if(Mpers.personagemAndaY == 0)
+	{
+		printf("FIM DO MAPA, retorne pra Norte, direita, esquerda\n");
+		Mpers.personagemAndaY++;
+	} 
+	if(Mpers.personagemAndaY == 99)
+	{
+		printf("FIM DO MAPA, retorne pra Sul, direita, esquerda\n");
+		Mpers.personagemAndaY--;
+	}  
+	Mpers = AndaCorre(MKbd, Mpers);
+	Personagem_Status(Mpers);
+	MKbd = Kbd_Inicializacao(MKbd);
+	
+}
+
+if(getKbd == '1')
+	opcKbd = 9999;
 
 }
-/*
 
-
-personagem.id=1;
-personagem.anda.x=2;
-personagem.anda.y=1;
-personagem.anda.z=50;
-personagem.anda.x=3;
-personagem.anda.y=1;
-personagem.anda.z=50;
-*/
 	return 0;
 }

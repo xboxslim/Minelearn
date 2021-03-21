@@ -62,10 +62,9 @@ struct Keyboard Kbd_Inicializacao(struct Keyboard Kbd)
 	Kbd.teclaShiftSolta = 0;
 }
 
-int AndaCorre(struct Keyboard tcl, struct Personagem_Mundo Pers1, int xyz_return)
+struct Personagem_Mundo AndaCorre(struct Keyboard tcl, struct Personagem_Mundo Pers1)
 {	
 	
-	int retnX,retnY,retnZ;
 	if(tcl.teclaEspacoPressionada == 1)
 	{
 		tcl.teclaEspacoSolta=0;
@@ -157,21 +156,7 @@ int AndaCorre(struct Keyboard tcl, struct Personagem_Mundo Pers1, int xyz_return
 			Pers1.personagemAndaY--;
 		}
 	}
-	if(xyz_return == 1)
-	{
-		retnX = Pers1.personagemAndaX;
-		return retnX;
-	}
-	if(xyz_return == 2)
-	{
-		retnY = Pers1.personagemAndaY;
-		return retnY;
-	}
-	if(xyz_return == 3)
-	{	
-		retnZ = Pers1.personagemAndaZ;
-		return retnZ;
-	}	
+	return Pers1;		
 }
 
 void Ataca()

@@ -60,7 +60,8 @@ printf(" esta andando para o leste\n");
 Mmobs.mobsAndaX++;
 Mobs_Status(Mmobs);
 
-
+while(getKbd != '1')
+{
 getKbd = getchar();
 if((getKbd == 'W') || (getKbd == 'w'))
 {
@@ -83,9 +84,11 @@ if((getKbd == 'D') || (getKbd == 'd'))
 	Mretn = 1;
 }
 
-AndaCorre(MKbd, Mpers, Mretn);
+Mpers = AndaCorre(MKbd, Mpers);
+Personagem_Status(Mpers);
 Kbd_Inicializacao(MKbd);
 
+}
 /*
 
 

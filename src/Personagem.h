@@ -51,4 +51,6 @@ struct Mouse
 struct Personagem_Mundo Personagem_Inicializacao(int fID, int fx, int fy, int fz);
 struct Keyboard Kbd_Inicializacao(struct Keyboard Kbd);
 void Personagem_Status(struct Personagem_Mundo Pers1);
-int AndaCorre(struct Keyboard tcl, struct Personagem_Mundo Pers1, int xyz_return);
+
+struct Personagem_Mundo AndaCorre(struct Keyboard tcl, struct Personagem_Mundo Pers1);
+

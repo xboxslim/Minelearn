@@ -182,3 +182,10 @@ void Ataca()
 		Pers1.personagemAtacaDano=1;
 	}
 }
+
+void Personagem_Localizacao(struct Personagem_Mundo Pers1)
+{
+	printf("Personagem (x) = %d\n",Pers1.personagemAndaX);
+	printf("Personagem (y) = %d\n",Pers1.personagemAndaY);
+	printf("Personagem (z) = %d\n",Pers1.personagemAndaZ);		
+}

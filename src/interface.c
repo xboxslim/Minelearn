@@ -31,16 +31,41 @@ int main()
 		else
 		if(opc == 2)
 		{
+			printf("VISAO\n\n");
 		}
 		else
 		if(opc == 3)
 		{
-
-	
+			printf("ANDAR\n\n");	
+			while(opcKbd != 9999)
+			{
+				getKbd = getchar();
+				if((getKbd == 'W') || (getKbd == 'w'))
+				{
+					MKbd.teclaWPressionada = 1;
+					opcKbd = 2;
+				}
+				if((getKbd == 'S') || (getKbd == 's'))
+				{
+					MKbd.teclaSPressionada = 1;
+					opcKbd = 2;
+				}
+				if((getKbd == 'A') || (getKbd == 'a'))
+				{
+					MKbd.teclaAPressionada = 1;
+					opcKbd = 1;
+				}
+				if((getKbd == 'D') || (getKbd == 'd'))
+				{
+					MKbd.teclaWPressionada = 1;
+					opcKbd = 1;
+				}
+			}
 		}
 		else
 		{
 			printf("Opcao Invalida\n");
+			opc = 0;
 		}
 	}
 	else
